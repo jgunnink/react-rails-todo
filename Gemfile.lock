@@ -126,6 +126,10 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     ruby_dep (1.5.0)
+    sorbet (0.5.5258)
+      sorbet-static (= 0.5.5258)
+    sorbet-runtime (0.5.5258)
+    sorbet-static (0.5.5258-x86_64-linux)
     spring (2.1.0)
     spring-watcher-listen (2.0.1)
       listen (>= 2.7, < 4.0)
@@ -157,6 +161,8 @@ DEPENDENCIES
   puma (~> 4.1)
   rack-cors
   rails (~> 6.0.2, >= 6.0.2.1)
+  sorbet
+  sorbet-runtime
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3 (~> 1.4)

@@ -10,10 +10,6 @@ It uses a Dockerfile to run, so you can develop regardless of which system you a
 
 ## Run the docker image
 
-`docker run -it -v $(pwd):/app todo-app /bin/bash`
+`docker run -it -p 3000:3000 -v $(pwd):/app todo-app:latest`
 
-Once running, you can do stuff you'd normally do at a terminal prompt with ruby and rails installed.
-
-For example, start the server using `rails s -b 0.0.0.0`. You need to bind to 0.0.0.0 so you can
-access the server from your machines browser, since your browser won't be local to the docker
-container.
+The container will auto-start with the rails server running.
